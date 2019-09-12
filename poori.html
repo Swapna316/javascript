@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    .primary-msg{
+        display:none;
+        position:absolute;
+        width:100%;
+        top:0;
+    
+    }
+</style>
+
+
+<div class="alert alert-primary primary-msg" role="alert">
+    <div class="d-flex justify-content-between align-items-center">
+        A simple primary alert_check it out!
+      
+      <a href="#">Close</a>
+</div>
+</div>
+
+
+<div class="container my-5">
+    <div class="d-flex  flex-column align-items-center justify-content:center">
+        <div class="card  border border-warning  px-2 py-2">
+            
+        
+    <div class="form-group">
+        <label>User name</label>
+        <input class="form-control" placeholder="enter name">
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input class="form-control" placeholder="enter password">
+    </div>
+    <div>
+    <button class="btn btn-success btn-link text-white" onclick="login()">Submit</button>
+    <button class="btn btn-danger btn-link text-white" onclick="logout()">Cancel</button>
+    </div>
+</div>
+</div>
+
+<script>
+    function login(){
+        $('.alert').show();
+    }
+    function logout(){
+        $('.alert').hide();
+    }
+
+
+</script>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
